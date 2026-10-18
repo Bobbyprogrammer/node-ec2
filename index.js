@@ -5,7 +5,7 @@ const app = express();
 const PORT = 4500;
 
 app.get("/", (req, res) => {
-  res.send("Server is running");
+  res.send(`Server is running on port ${PORT}`);
 });
 
 app.listen(PORT, () => {
